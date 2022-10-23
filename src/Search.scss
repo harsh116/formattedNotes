@@ -1,0 +1,23 @@
+@import "config";
+
+.search {
+  box-sizing: border-box;
+  padding: 0.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 3rem;
+  background-color: darken($greyshade, 10%);
+
+  .searchInput {
+    border: none;
+    outline: none;
+    border-radius: 8px;
+  }
+}
+
+@include media-xs {
+  .search {
+    justify-content: flex-start;
+  }
+}
